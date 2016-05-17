@@ -1,6 +1,6 @@
 # Ubuntu 15.10
 
-FROM ubuntu:wily64
+FROM ubuntu:15.10
 
 MAINTAINER Raul <rmrbest@gmail.com>
 
