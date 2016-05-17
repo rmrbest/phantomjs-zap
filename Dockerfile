@@ -25,6 +25,9 @@ ADD ./supervisord.conf /etc/supervisord.conf
 
 VOLUME ["/tmp/reports"]
 
+ADD ./start.sh /start.sh
+RUN chmod 755 /start.sh
 EXPOSE 4444
+CMD ["/bin/bash", "/start.sh"]
 
 
