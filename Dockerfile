@@ -1,6 +1,6 @@
 # Ubuntu 15.10
 
-FROM ubuntu/wily
+FROM ubuntu:wily64
 
 MAINTAINER Raul <rmrbest@gmail.com>
 
@@ -20,6 +20,10 @@ RUN \
     wget https://github.com/zaproxy/zaproxy/releases/download/2.4.3/ZAP_2.4.3_Linux.tar.gz && \
     tar -zxvf ZAP_2.4.3_Linux.tar.gz
 
+ADD ./supervisord.conf /etc/supervisord.conf
 
+VOLUME ["/tmp/reports"]
+
+EXPOSE 4444
 
 
