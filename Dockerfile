@@ -14,7 +14,7 @@ ENV PORT_PHANTOM 4444
 
 RUN \
     apt-get update && \
-    apt-get install -y openjdk-8-jre supervisor wget && \
+    apt-get install -y openjdk-7-jre supervisor wget && \
     cd /opt && \
     wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2 && \
     tar -xjf phantomjs-2.1.1-linux-x86_64.tar.bz2 && \
