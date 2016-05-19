@@ -27,7 +27,11 @@ VOLUME ["/tmp/reports"]
 
 ADD ./start.sh /start.sh
 RUN chmod 755 /start.sh
+
 EXPOSE 4444
+
+EXPOSE 8090
+
 CMD ["/bin/bash", "/start.sh"]
 
 
